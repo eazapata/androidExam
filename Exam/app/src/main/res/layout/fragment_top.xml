@@ -9,7 +9,6 @@
         android:id="@+id/userText"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:layout_centerHorizontal="true"/>
 
     <SeekBar
