@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomFragment">
+
+    <SeekBar
+        android:id="@+id/redSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:max="255"
+        android:thumbTint="@color/red"
+        android:progressTint="@color/red"
+        />
+    <SeekBar
+        android:id="@+id/greenSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redSeekBar"
+        android:layout_marginBottom="5dp"
+        android:max="255"
+        android:thumbTint="@color/green"
+        android:progressTint="@color/green"/>
+    <SeekBar
+        android:id="@+id/blueSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greenSeekBar"
+        android:max="255"
+        android:thumbTint="@color/blue"
+        android:progressTint="@color/blue"
+        android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/changeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blueSeekBar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/changeColor"
+        android:backgroundTint="@color/gray"
+        />
+
+
+
+</RelativeLayout>
